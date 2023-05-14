@@ -1,3 +1,5 @@
+/*прописати послідовність дій*/
+
 .list {
     list-style: none;
 }
@@ -10,8 +12,7 @@ button {
 }
 /*прописав для лого*/
 .web-text {
-    font-family: 'Raleway';
-    sans-serif;
+    font-family: 'Raleway'; sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
