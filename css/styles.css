@@ -29,7 +29,13 @@ img {
     display: block;
 }
 /*Контейнер.спільний клас для кожної секції, якій огорнутий у DIV*/
-
+.conteiner {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 
 
