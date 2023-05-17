@@ -2,13 +2,16 @@
 1. підключити шрифти
 2. прописати шрифти у стилях
 3. підключити modern-normalize
+4. підключити файл style.css
 4. скидання дефолтних налаштувань
 5. прописати стилі для: header, main, footer*/
 
 /*скидання дефолтних налаштувань браузера*/
+/* скинув маркери */
 .list {
     list-style: none;
 }
+/* скинув підкреслення */
 .link {
     text-decoration: none;
 }
@@ -37,30 +40,11 @@ img {
     padding-right: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*прописав для лого*/
+/*-------------------HEADER-------------------*/
+/*прописую шрифт для HEADER*/
+/*прописую для WEBSTUDIO*/
 .web-text {
-    font-family: 'Raleway'; sans-serif;
+    font-family: 'Raleway'; san-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -70,155 +54,39 @@ img {
     color: #4D5AE5;
 }
 
-.studio-text {
-    font-family: 'Raleway';
-    sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-transform: uppercase 
-    color: #F4F4FD;
-}
-
-.footer-text {
-    font-family: 'Roboto';
-    sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
-}
-
-.web-text {
-    color: #4D5AE5;
-}
-.studio-text {
-    color: #2E2F42;;
-}
-/*інтерактивні посилання*/
-.header-contacts-item{
-    font-family: 'Roboto'; sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-}
-/*прописав для кнопок хове,фокус/неработает*/
-.button {
-    background-color: #F4F4FD;
-    /* Другие свойства для кнопки, если нужно */
-}
-
-.button:hover {
-    background-color: #404BBF;
-    /* Цвет, который нужен при наведении */
-}
-
-.menu-btn-item {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #4D5AE5;
-}
 
 
-/*шрифты app-ideas*/
-.ideas-title{
-    font-family: 'Roboto'; sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-}
-.ideas-category{
-    font-family: 'Roboto'; sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-}
-/*шрифты для serise*/
-.servise-title{
-    font-family: 'Roboto';
-        sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-}
-.servise-category{
-font-family: 'Roboto';
-    sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-/*Шрифты для portfolio-section*/
-.portfolio-section-title{
-font-family: 'Roboto';
-    sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-.portfolio-section-category{
-    font-family: 'Roboto';
-        sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-}
-/*шрифты для footer*/
-.web-text{
-    font-family: 'Raleway'; sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4D5AE5;
-}
-.studio-text{
-    font-family: 'Raleway'; sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        text-transform: uppercase
-        color: #F4F4FD;
-}
-.footer-text{
-    font-family: 'Roboto'; sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #F4F4FD;
-}
+
+
+
+
+
+
+
+
+
+/*-------------------MAIN-------------------*/
+
+/*-------------------FOOTER-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
