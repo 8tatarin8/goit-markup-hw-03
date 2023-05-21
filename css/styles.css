@@ -41,7 +41,7 @@ img {
 }
 
 /*-------------------HEADER-------------------*/
-/*прописую шрифт для HEADER*/
+/*1. ПРОПИСУЮ ШРИФТИ ДЛЯ HEADER*/
 /*прописую для WEBSTUDIO*/
 .web-text {
     font-family: 'Raleway', sans-serif;
@@ -53,7 +53,6 @@ img {
     text-transform: uppercase;
     color: #4D5AE5;
 }
-
 .studio-text {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -64,8 +63,7 @@ img {
     text-transform: uppercase;
     color: #2E2F42;
 }
-
-/* прописую список меню/menu-item */
+/* прописую шрифти для списоку меню/menu-item */
 .menu-item {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -75,8 +73,7 @@ img {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-
-/* прописую інтерактивні посилання/header-contacts */
+/* прописую шрифти для інтерактивних посилань/header-contacts */
 .header-contacts {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -86,10 +83,21 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+/*2. ПРОПИСУЮ FLEX для HEADER */
 
+
+
+
+
+
+
+
+
+/*=============HEADER END=============*/
 
 /*-------------------MAIN-------------------*/
 /*головний список кнопок-меню/menu-btn*/
+/*1. прописую шрифти для MAIN*/
 .menu-btn {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -120,9 +128,10 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+/*=============MAIN END=============*/
 
 /*-------------------FOOTER-------------------*/
-/* прописую підвал */
+/*1. прописую щрифти для підвал */
 .footer-text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -132,7 +141,7 @@ img {
     letter-spacing: 0.02em;
     color: #F4F4FD;
 }
-
+/*=============FOOTER END=============*/
 
 
 
