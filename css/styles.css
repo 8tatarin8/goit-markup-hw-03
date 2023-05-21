@@ -32,14 +32,14 @@ img {
     display: block;
 }
 /*Контейнер.спільний клас для кожної секції, якій огорнутий у DIV*/
-.conteiner {
+.container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-/*=========END=========*/
+/*=========/END=========*/
 
 /*-------------------HEADER-------------------*/
 /*1. ПРОПИСУЮ ШРИФТИ ДЛЯ HEADER*/
@@ -84,28 +84,42 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 /*2. ПРОПИСУЮ FLEX для HEADER */
-/* видалити разом із коментом*/
-.main-header-container {
-    outline: 1px solid red;
-}
+
 /* властивості FLEX-контейнера*/
-
-
-
-
-
-
-
+.main-header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 /* властивості FLEX-елементів*/
-
-
-
-
-
-
-
-/*=============HEADER END=============*/
+.main-header-container {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.page-adress {
+    display: flex;
+    align-items: center;
+}
+.header-contacts {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    margin-left: 325px;
+}
+/*=============/HEADER END=============*/
 
 /*-------------------MAIN-------------------*/
 /*головний список кнопок-меню/menu-btn*/
@@ -140,7 +154,59 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
-/*=============MAIN END=============*/
+/*2. ПРОПИСУЮ FLEX для MAIN */
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 96px;
+    margin-bottom: 120px;
+}
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    margin-bottom: 72px;
+}
+.menu-btn-item { 
+    display: flex;
+    align-items: center;
+}
+.filter-button {
+    padding: 12px 24px;
+    background-color: #F4F4FD;
+    background-color: #4D5AE5;
+}
+.filter-button:hover,
+.filter-button:focus {
+    background-color: #404BBF;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============/MAIN END=============*/
 
 /*-------------------FOOTER-------------------*/
 /*1. прописую щрифти для підвал */
@@ -153,7 +219,7 @@ img {
     letter-spacing: 0.02em;
     color: #F4F4FD;
 }
-/*=============FOOTER END=============*/
+/*=============/FOOTER END=============*/
 
 
 
