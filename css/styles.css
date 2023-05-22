@@ -133,7 +133,6 @@ img {
     letter-spacing: 0.04em;
     color: #4D5AE5;
 }
-
 /* прописую ideas-title/ideas-category*/
 .ideas-title {
     font-family: 'Roboto', sans-serif;
@@ -144,7 +143,6 @@ img {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-
 .ideas-category {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -155,7 +153,7 @@ img {
     color: #434455;
 }
 /*2. ПРОПИСУЮ FLEX для MAIN */
-
+/*властивості flex-контейнера*/
 .hero-btn {
     display: flex;
     align-items: center;
@@ -163,6 +161,7 @@ img {
     padding-top: 96px;
     margin-bottom: 120px;
 }
+/*КНОПКИ-МЕНЮ.властивості flex-елементів*/
 .menu-btn {
     display: flex;
     align-items: center;
@@ -177,35 +176,25 @@ img {
 .filter-button {
     padding: 12px 24px;
     background-color: #F4F4FD;
-    background-color: #4D5AE5;
+    color: #4D5AE5;
 }
 .filter-button:hover,
 .filter-button:focus {
     background-color: #404BBF;
     color: #FFFFFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*властивості списоку web-product*/
+.web-product {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.title-category-text {
+    padding: 32px 32px 55px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
 /*=============/MAIN END=============*/
 
 /*-------------------FOOTER-------------------*/
@@ -219,6 +208,24 @@ img {
     letter-spacing: 0.02em;
     color: #F4F4FD;
 }
+/*2. ПРОПИСУЮ FLEX для FOOTER */
+/*властивості flex-контейнера*/
+.footer {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/*властивості flex-елементів*/
+.footer-conteiner {
+    padding: 100px 100px 1020px 156px;
+}
+.web-text,
+.studio-text {
+    display: inline-block;
+}
+
 /*=============/FOOTER END=============*/
 
 
