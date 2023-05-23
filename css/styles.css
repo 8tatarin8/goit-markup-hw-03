@@ -41,7 +41,7 @@ img {
 }
 /*=========/END=========*/
 
-/*-------------------HEADER-------------------*/
+/*-------HEADER(INDEX/PORTFOLIO)-------*/
 /*1. ПРОПИСУЮ ШРИФТИ ДЛЯ HEADER*/
 /*прописую для WEBSTUDIO*/
 .web-text {
@@ -85,7 +85,7 @@ img {
     color: #434455;
 }
 
-/*2. ПРОПИСУЮ FLEX для HEADER */
+/*2. ПРОПИСУЮ FLEX для HEADER(INDEX/PORTFOLIO) */
 
 /* властивості FLEX-контейнера*/
 .main-header {
