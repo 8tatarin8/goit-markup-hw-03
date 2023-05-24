@@ -86,7 +86,6 @@ img {
 }
 
 /*2. ПРОПИСУЮ FLEX для HEADER(INDEX/PORTFOLIO) */
-
 /* властивості FLEX-контейнера*/
 .main-header {
     display: flex;
@@ -153,6 +152,27 @@ img {
     color: #434455;
 }
 /*2. ПРОПИСУЮ FLEX для MAIN */
+/*INDEX*/
+/*секція1*/
+/*властивості flex-контейнера*/
+.hero-service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* властивості FLEX-елементів*/
+
+/*секція2*/
+/*властивості flex-контейнера*/
+
+
+
+/* властивості FLEX-елементів*/
+
+
+
+/*PORTFOLIO*/
 /*властивості flex-контейнера*/
 .hero-btn {
     display: flex;
@@ -161,6 +181,17 @@ img {
     padding-top: 96px;
     margin-bottom: 120px;
 }
+
+/*все, що стосується BUTTON(INDEX/PORTFOLIO)*/
+/*----------INDEX----------*/
+
+
+
+
+
+
+
+/*----------PORTFOLIO----------*/
 /*КНОПКИ-МЕНЮ.властивості flex-елементів*/
 .menu-btn {
     display: flex;
@@ -195,6 +226,7 @@ img {
     border: 1px solid #E7E9FC;
     border-top: none;
 }
+
 /*=============/MAIN END=============*/
 
 /*-------------------FOOTER-------------------*/
