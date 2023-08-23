@@ -1,13 +1,40 @@
-/* ПОСЛІДОВНІСТЬ ДІЙ:
-1. підключити шрифти
-2. прописати шрифти у стилях
-3. підключити modern-normalize
-4. підключити файл style.css
-4. скидання дефолтних налаштувань
-5. прописати стилі для: header, main, footer*/
+/* ПОСЛІДОВНІСТЬ ДІЙ: #початок роботи в CSS
+1. підключити modern-normalize
+2. підключити файл style.css
+3. підключити шрифти з google-fonts
+4. cкидання дефолтних налаштувань браузера
+5. прописати загальні стилі
+5. прописати стилі шрифтів
+6. прописати стилі для: header, main, footer*/
 
+/*підключив modern-normalize - виконано*/
+/*підключив файл style-css - виконано*/
+/*підключив шрифти з google-fonts - виконано*/
 /*скидання дефолтних налаштувань браузера*/
-/* скинув маркери */
+/* скинув маркери 
+7. звернувся до *{backround-color/outline}
+8. прописав для секцій(padding-top/botton;margin-top/bottom)
+9. прописав розташування по властивостям для елементів в box
+Алгоритм пропису властивостей у флекс-бокс/elements:
+Основні властивості:
+
+display: flex; - робить Flex-conteiner( в середині якого всі дочірні елементи стануть флекс-елементами)
+flex-direction: - змінює напрямок головної осі
+jastify-content: - вирівнювання елементів по головній осі
+align-items: - вирівнювання елементів по допоміжній осі
+flex-wrap: - перенесення по головній осі
+column-gap: відступ між колонками
+row-gap: - відступ між рядками
+
+10. ПЕРЕВІРИТИ ЧИТАБЕЛЬНІСТЬ КОДУ
+*/
+
+/*
+|=====================================|
+|------|ДЕФОЛТНІ СКИДАННЯ/RESET|------|
+|=====================================|
+*/
+/*скинув маркери*/
 .list {
     list-style: none;
 }
@@ -15,255 +42,362 @@
 .link {
     text-decoration: none;
 }
-
 button {
     cursor: pointer;
 }
-h1,h2,h3,h4,p {
+
+h1, h2, h3, h4, p {
     margin-top: 0;
     margin-bottom: 0;
 }
-ul,ol {
+
+ul,
+ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
 }
+
 img {
     display: block;
 }
-/*Контейнер.спільний клас для кожної секції, якій огорнутий у DIV*/
-.container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-/*=========/END=========*/
 
-/*-------HEADER(INDEX/PORTFOLIO)-------*/
-/*1. ПРОПИСУЮ ШРИФТИ ДЛЯ HEADER*/
-/*прописую для WEBSTUDIO*/
-.web-text {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4D5AE5;
+/*
+|=========================================|
+|-|ЗАГАЛЬНІ СТИЛІ/STYLES INDEX/PORTFOLIO|-|
+|=========================================|
+*/
+/*
+|------------COLORS/FONTS/OTHER----------|
+|----прописати зрозумілі значення для кольрів:----|
+|- CL - колір для тексту;-------------------------------|
+|- H - колір для заголовків;----------------------------|
+|- P - колір для абзаців;----------------------------|
+|- BG - колір для фону;----------------------------------|
+*/
+:root {
+    /*colors*/
+    --color-web: #4D5AE5;
+    --color-studio-header: #2E2F42;
+    --color-studio-footer: #F4F4FD;
+    --title-h-cl: #2E2F42;
+    --title-p-cl: #434455;
+    --header-navigation-a-norm-cl: #2E2F42;
+    --header-adress-a-norm-cl: #434455;
+    --header-a-active-cl: #404BBF;
+    --section-hero-h-cl: #FFF;
+    --section-hero-bg: #2E2F42;
+    --section-hero-btn-cl: #FFF;
+    --section-hero-btn-bg: #4D5AE5;
+    --section-hero-btn-active-bg: #404BBF;
+    --portfolio-filter-btn-cl: #4D5AE5;
+    --portfolio-filter-btn-active-cl:#FFF;
+    --portfolio-filter-btn-norm-bg: #F4F4FD;
+    --portfolio-filter-btn-active-bg: #404BBF;
+
+    /*fonts*/
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /*other*/
 }
-.studio-text {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #2E2F42;
-}
-/* прописую шрифти для списоку меню/menu-item */
-.menu-item {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-/* прописую шрифти для інтерактивних посилань/header-contacts */
-.header-contacts {
+
+.body-content {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #434455;
+    background: #FFF;
+}
+
+
+/*
+|==========================================|
+|HEADER-FOOTER/загальні для INDEX/PORTFOLIO|
+|==========================================|
+*/
+.main-header {}
+
+/*
+|==========================================|
+|----------------NAVIGATION----------------|
+|==========================================|
+*/
+.header-navigation {}
+
+.logo-webstudio-text {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-web);
+}
+
+.header-logo-link {
+    color: var(--color-studio-header);
+}
+/*
+|==========================================|
+|-----HEADER/головна навігація/перехід-----|
+|==========================================|
+*/
+
+.header-menu-list {}
+
+.header-menu-item {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.header-menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--header-navigation-a-norm-cl);
+}
+
+.hdr-text-color {
+    color: #2e2f42;
+}
+
+/*
+|==========================================|
+|HEADER/ADRESS|
+|==========================================|
+*/
+address {
+    font-style: normal;
+}
+
+.header-page-adress {}
+
+.list-contacts {}
+
+.header-contacts-item {}
+
+.header-contacts {
     color: #434455;
 }
 
-/*2. ПРОПИСУЮ FLEX для HEADER(INDEX/PORTFOLIO) */
-/* властивості FLEX-контейнера*/
-.main-header {
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+/*
+|==========================================|
+|FOOTER|
+|==========================================|
+*/
+.footer {
+    background-color: #2E2F42;
 }
-/* властивості FLEX-елементів*/
-.main-header-container {
-    display: flex;
-    align-items: center;
-}
-.navigation {
-    display: flex;
-    align-items: center;
-    column-gap: 80px;
-}
-.menu {
-    display: flex;
-    align-items: center;
-    column-gap: 40px;
-}
-.page-adress {
-    display: flex;
-    align-items: center;
-}
-.header-contacts {
-    display: flex;
-    align-items: center;
-    column-gap: 40px;
-    margin-left: 325px;
-}
-/*=============/HEADER END=============*/
 
-/*-------------------MAIN-------------------*/
-/*головний список кнопок-меню/menu-btn*/
-/*1. прописую шрифти для MAIN*/
-.menu-btn {
+.logo-webstudio-text {
+    font-weight: 700;
+    color: var(--color-web);
+}
+
+.footer-logo-link {
+    color: var(--color-studio-footer) ;
+}
+
+.footer-text {
+    color: var(--color-studio-footer);
+}
+
+
+/*загальний клас для заголовків H2 на INDEX*/
+.title-index {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--title-h-cl);
+}
+/*загальний клас для заголовків H2,H3 INDEX/PORTFOLIO*/
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-h-cl);
+}
+
+/*інтерактивні посилання в спокійному стані*/
+.header-contacts-item {
+    color: #434455;
+}
+/*інтерактивні посилання в активному стані*/
+.header-contacts-item :hover,
+.header-contacts-item :focus {
+    color: var(--header-a-active-cl);
+}
+.header-menu-item :hover,
+.header-menu-item :focus {
+    color: var(--header-a-active-cl);
+}
+/*
+|========================================|
+|BUTTONS STYLES/ЗАГАЛЬНІ СТИЛІ ДЛЯ КНОПОК|
+|========================================|
+*/
+/*---------------INDEX---------------*/
+.section-hero-button-servise {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+
 }
-/* прописую ideas-title/ideas-category*/
-.ideas-title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1,2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-.ideas-category {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-/*2. ПРОПИСУЮ FLEX для MAIN */
-/*INDEX*/
-/*секція1*/
-/*властивості flex-контейнера*/
-.hero-service-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* властивості FLEX-елементів*/
-
-/*секція2*/
-/*властивості flex-контейнера*/
-
-
-/* властивості FLEX-елементів*/
-
-
-/*PORTFOLIO*/
-/*властивості flex-контейнера*/
-.hero-btn {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 96px;
-    margin-bottom: 120px;
-}
-
-/*все, що стосується BUTTON(INDEX/PORTFOLIO)*/
-/*----------INDEX----------*/
-
-
-
-
-
-
-
-/*----------PORTFOLIO----------*/
-/*КНОПКИ-МЕНЮ.властивості flex-елементів*/
-.menu-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 24px;
-    margin-bottom: 72px;
-}
-.menu-btn-item { 
-    display: flex;
-    align-items: center;
-}
-.filter-button {
-    padding: 12px 24px;
-    background-color: #F4F4FD;
-    color: #4D5AE5;
-}
-.filter-button:hover,
-.filter-button:focus {
+/*BUTTON/ACTIVE/INDEX*/
+.section-hero-button-servise:hover,
+.section-hero-button-servise:focus {
     background-color: #404BBF;
     color: #FFFFFF;
 }
-/*властивості списоку web-product*/
-.web-product {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 48px 24px;
-}
-.title-category-text {
-    padding: 32px 32px 55px 16px;
-    border: 1px solid #E7E9FC;
-    border-top: none;
-}
 
-/*=============/MAIN END=============*/
+/*---------------PORTFOLIO---------------*/
 
-/*-------------------FOOTER-------------------*/
-/*1. прописую щрифти для підвал */
-.footer-text {
-    font-family: 'Roboto', sans-serif;
+/*
+|=======================================|
+|----------ЗАГАЛЬНІ СТИЛІ:END-----------|
+|=======================================|
+*/
+
+/*
+|==========================================|
+|---------------|MAIN|INDEX|---------------|
+|---------------|SECTION HERO|-------------|
+|==========================================|
+*/
+.section-hero-servise {
+    background: #2E2F42;
+}
+.section-hero-solutions {
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #F4F4FD;
-}
-/*2. ПРОПИСУЮ FLEX для FOOTER */
-/*властивості flex-контейнера*/
-.footer {
-    display: flex;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    text-align: center;
+    color: #FFF;
 }
 
-/*властивості flex-елементів*/
-.footer-conteiner {
-    padding: 100px 100px 1020px 156px;
+/*
+|==========================================|
+|---------------|MAIN|INDEX|---------------|
+|---------------|SECTION-OUR-GOALS|--------|
+|==========================================|
+*/
+.section-our-goals {}
+
+.section-our-goals-list {}
+
+.section-our-goals-item {}
+
+.section-our-goals-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-h-cl);
 }
-.web-text,
-.studio-text {
-    display: inline-block;
+/*
+|==========================================|
+|-------------|MAIN|INDEX|-----------------|
+|-------------|SECTION PROPOSITION|--------|
+|==========================================|
+*/
+.section-proposition {}
+
+.section-proposition-title {}
+
+.section-proposition-list {}
+
+.section-proposition-item {}
+
+.section-proposition-img {}
+
+/*
+|==========================================|
+|-------------|MAIN|INDEX|-----------------|
+|-------------|SECTION OUR TEAM|-----------|
+|==========================================|
+*/
+.section-team {
+    background-color: #F4F4FD;
 }
-
-/*=============/FOOTER END=============*/
-
-
-
-
-
-
-
-
-
  
+.section-team-first-title {}
+
+.section-team-list {}
+
+.section-team-item {
+    background-color: #FFFFFF;
+}
+
+.section-team-img {}
+
+.section-team-title-name {}
+
+.section-team-category {
+    
+}
+
+/*
+|============================================|
+|-------------|MAIN|PORTFOLIO|---------------|
+|-------------|SECTION HERO|-----------------|
+|============================================|
+*/
+.hero-btn {}
+/*
+|============================================|
+|-------------|MAIN|PORTFOLIO|---------------|
+|-------------|APP-IDEAS|--------------------|
+|============================================|
+*/
+
+.app-ideas {}
+
+.ideas-item {}
+
+.a-link {}
+
+.ideas-img {}
+
+.ideas-title {}
+
+.title {}
+
+.ideas-category {}
+
+.category {
+    color: #434455;
+}
+
+.service-item {}
+
+.service-img {}
+
+.servise-title {}
+
+.servise-category {}
+
+.portfolio-secion-item {}
+
+.portfolio-section-img {}
+
+.portfolio-section-title {}
+
+.portfolio-section-category {}
