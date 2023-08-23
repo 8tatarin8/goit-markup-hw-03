@@ -61,7 +61,9 @@ ol {
 img {
     display: block;
 }
-
+* {
+    outline: 1px solid tomato;
+}
 /*
 |=========================================|
 |-|ЗАГАЛЬНІ СТИЛІ/STYLES INDEX/PORTFOLIO|-|
@@ -76,6 +78,7 @@ img {
 |- BG - колір для фону;----------------------------------|
 */
 :root {
+    /*повидаляти зайве*/
     /*colors*/
     --color-web: #4D5AE5;
     --color-studio-header: #2E2F42;
