@@ -63,6 +63,7 @@ img {
 
 
 /*7. звернувся до *{backround-color/outline}/DELETE по завершенню*/
+/*
 * {
     outline: 1px solid tomato;
     background: orange;
@@ -133,29 +134,35 @@ img {
 }
 
 .container {
-    width: 1188px;
+    width: 1146px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-
-
-
 /*
 |==========================================|
-|HEADER-FOOTER/загальні для INDEX/PORTFOLIO|
+|=======HEADER-FOOTER/загальні стилі=======|
 |==========================================|
 */
-.main-header {}
+.main-header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
 
+.header-container {
+    display: flex;
+}
 /*
 |==========================================|
 |----------------NAVIGATION----------------|
 |==========================================|
 */
-.header-navigation {}
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
 
 .logo-webstudio-text {
     font-family: var(--secondary-font);
@@ -166,6 +173,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-web);
+    align-items: center;
+    margin-right: 76px;
 }
 
 .header-logo-link {
@@ -177,7 +186,10 @@ img {
 |==========================================|
 */
 
-.header-menu-list {}
+.header-menu-list {
+    display: flex;
+    column-gap: 40px;
+}
 
 .header-menu-item {
     font-style: normal;
@@ -205,38 +217,22 @@ address {
     font-style: normal;
 }
 
-.header-page-adress {}
+.header-page-adress {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
 
-.list-contacts {}
+.list-contacts {
+    display: flex;
+    column-gap: 40px;
+}
 
 .header-contacts-item {}
 
 .header-contacts {
     color: #434455;
 }
-
-/*
-|==========================================|
-|FOOTER|
-|==========================================|
-*/
-.footer {
-    background-color: #2E2F42;
-}
-
-.logo-webstudio-text {
-    font-weight: 700;
-    color: var(--color-web);
-}
-
-.footer-logo-link {
-    color: var(--color-studio-footer) ;
-}
-
-.footer-text {
-    color: var(--color-studio-footer);
-}
-
 
 /*загальний клас для заголовків H2 на INDEX*/
 .title-index {
@@ -294,8 +290,6 @@ address {
     color: #FFFFFF;
 }
 
-/*---------------PORTFOLIO---------------*/
-
 /*
 |=======================================|
 |----------ЗАГАЛЬНІ СТИЛІ:END-----------|
@@ -309,8 +303,16 @@ address {
 |==========================================|
 */
 .section-hero-servise {
-    background: #2E2F42;
+    background-color: #2E2F42;
 }
+.hero-container {
+    padding-top: 188px;
+    padding-bottom: 149px;
+    display: block;
+    text-align: center;
+
+}
+
 .section-hero-solutions {
     font-style: normal;
     font-weight: 700;
@@ -327,11 +329,22 @@ address {
 |---------------|SECTION-OUR-GOALS|--------|
 |==========================================|
 */
-.section-our-goals {}
+.section-our-goals {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.our-goals-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section-our-goals-list {
+    display: flex;
+    column-gap: 20px;
+}
 
-.section-our-goals-list {}
-
-.section-our-goals-item {}
+.section-our-goals-item {
+    width: calc((100% - 3*20px) / 4);
+}
 
 .section-our-goals-title {
     font-style: normal;
@@ -340,93 +353,117 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-h-cl);
+    margin-bottom: 18px;
 }
-/*
-|==========================================|
-|-------------|MAIN|INDEX|-----------------|
-|-------------|SECTION PROPOSITION|--------|
-|==========================================|
-*/
-.section-proposition {}
-
-.section-proposition-title {}
-
-.section-proposition-list {}
-
-.section-proposition-item {}
-
-.section-proposition-img {}
 
 /*
 |==========================================|
-|-------------|MAIN|INDEX|-----------------|
+|------------------|MAIN|------------------|
 |-------------|SECTION OUR TEAM|-----------|
 |==========================================|
 */
 .section-team {
     background-color: #F4F4FD;
+    padding-top: 66px;
+    padding-bottom: 63px;
 }
- 
-.section-team-first-title {}
+.team-container {
+    display: flex;
+    flex-direction: column;
+}
+.section-team-first-title {
+    text-align: center;
+    margin-bottom: 95px;
+}
 
-.section-team-list {}
+.section-team-list {
+    display: flex;
+    column-gap: 20px;
+}
 
 .section-team-item {
     background-color: #FFFFFF;
+    width: calc((100% - 3*20px) /4);
 }
 
 .section-team-img {}
 
 .section-team-title-name {}
 
-.section-team-category {
-    
+.section-team-category {}
+.text-container {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 /*
 |============================================|
-|-------------|MAIN|PORTFOLIO|---------------|
-|-------------|SECTION HERO|-----------------|
-|============================================|
-*/
-.hero-btn {}
-/*
-|============================================|
-|-------------|MAIN|PORTFOLIO|---------------|
-|-------------|APP-IDEAS|--------------------|
+|-------------------|MAIN|-------------------|
+|-----------------|PORTFOLIO|----------------|
 |============================================|
 */
 
-.app-ideas {}
+.portfolio {
+    padding-top: 125px;
+    padding-bottom: 120px;
+}
 
-.ideas-item {}
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
 
-.a-link {}
+.section-portfolio {
+    text-align: center;
+}
+
+.app-ideas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ideas-item {
+    column-gap: 25px;
+}
 
 .ideas-img {}
 
-.ideas-title {}
-
-.title {}
-
-.ideas-category {}
+.ideas-title {
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
 
 .category {
     color: #434455;
 }
 
-.service-item {}
+/*
+|==========================================|
+|FOOTER|
+|==========================================|
+*/
+.footer {
+    background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 120px;
+}
 
-.service-img {}
+.footer-container {
+    display: block;
+}
 
-.servise-title {}
+.logo-webstudio-text {
+    font-weight: 700;
+    color: var(--color-web);
+}
 
-.servise-category {}
+.footer-logo-link {
+    color: var(--color-studio-footer);
+}
 
-.portfolio-secion-item {}
-
-.portfolio-section-img {}
-
-.portfolio-section-title {}
-
-.portfolio-section-category {}
+.footer-text {
+    color: var(--color-studio-footer);
+}
