@@ -404,11 +404,12 @@ address {
 .section-team-item {
     background-color: #FFFFFF;
     width: calc((100% - 3*24px) /4);
-}
-
-.section-team-img {
+    /*продивитись де саме описується в макеті цей радіус*/
     border-radius: 0px 0px 4px 4px;
 }
+
+.section-team-img {} 
+
 .specialist-position {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -432,7 +433,7 @@ address {
 */
 
 .portfolio {
-    padding-top: 125px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -442,6 +443,7 @@ address {
 }
 
 .section-portfolio {
+    margin-bottom: 72px;
     text-align: center;
 }
 
@@ -449,11 +451,12 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 48px;
+    
 }
 
-.ideas-item {
-    column-gap: 25px;
-}
+.ideas-item {}
 
 .ideas-img {}
 
