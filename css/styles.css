@@ -460,6 +460,14 @@ address {
 
 .ideas-img {}
 
+.name-app-category {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
 .ideas-title {
     margin-top: 33px;
     margin-bottom: 33px;
