@@ -149,6 +149,7 @@ img {
 .main-header {
     padding-top: 28px;
     padding-bottom: 28px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .header-container {
@@ -453,12 +454,13 @@ address {
 
 .footer-container {
     display: inline-block;
-    margin-bottom: 16px;
+   
 }
 
 .logo-webstudio-text {
     font-weight: 700;
     color: var(--color-web);
+    margin-bottom: 16px;
 }
 
 .footer-logo-link {
