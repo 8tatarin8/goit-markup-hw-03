@@ -176,6 +176,9 @@ img {
     color: var(--color-web);
     align-items: center;
     margin-right: 76px;
+    /*можлива помилка*/
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-logo-link {
@@ -313,7 +316,7 @@ address {
 }
 .hero-container {
     padding-top: 188px;
-    padding-bottom: 149px;
+    padding-bottom: 188px;
     display: block;
     text-align: center;
 
