@@ -191,6 +191,9 @@ img {
 .header-menu-list {
     display: flex;
     gap: 40px;
+            /*можлива помилка*/
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 
@@ -198,9 +201,7 @@ img {
     font-style: normal;
     font-weight: 500;
     margin-right: 40px;
-        /*можлива помилка*/
-    padding-top: 24px;
-    padding-bottom: 24px;
+
 }
 
 .header-menu-link {
