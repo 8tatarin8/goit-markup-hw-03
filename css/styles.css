@@ -176,9 +176,7 @@ img {
     color: var(--color-web);
     align-items: center;
     margin-right: 76px;
-    /*можлива помилка*/
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
 }
 
 .header-logo-link {
@@ -199,8 +197,10 @@ img {
 .header-menu-item {
     font-style: normal;
     font-weight: 500;
-    /*можлива помилка*/
     margin-right: 40px;
+        /*можлива помилка*/
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-menu-link {
@@ -209,8 +209,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--header-navigation-a-norm-cl);
-    /*можлива помилка*/
     margin-right: 0;
+
 }
 
 .hdr-text-color {
