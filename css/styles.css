@@ -293,6 +293,7 @@ address {
     color: #FFFFFF;
 
     /*можлива помилка*/
+    display: block;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -325,7 +326,7 @@ address {
 }    
 
 .hero-container {
-    display: block;
+    
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
