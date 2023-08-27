@@ -292,6 +292,12 @@ address {
     background-color: #4D5AE5;
     color: #FFFFFF;
 
+    /*можлива помилка*/
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+
 }
 /*BUTTON/ACTIVE/INDEX*/
 .section-hero-button-servise:hover,
@@ -314,13 +320,12 @@ address {
 */
 .section-hero-servise {
     background-color: #2E2F42;
-}
-.hero-container {
     padding-top: 188px;
     padding-bottom: 188px;
+}
+.hero-container {
     display: block;
     text-align: center;
-
 }
 
 .section-hero-solutions {
@@ -331,6 +336,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFF;
+    min-width: 496px;
 }
 
 /*
