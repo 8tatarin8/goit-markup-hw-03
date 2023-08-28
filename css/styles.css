@@ -147,8 +147,6 @@ img {
 |==========================================|
 */
 .main-header {
-    padding-top: 28px;
-    padding-bottom: 28px;
     border-bottom: 1px solid #e7e9fc
 }
 
@@ -191,9 +189,6 @@ img {
 .header-menu-list {
     display: flex;
     gap: 40px;
-            /*можлива помилка*/
-    padding-top: 24px;
-    padding-bottom: 24px;
 
 }
 
@@ -210,7 +205,10 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--header-navigation-a-norm-cl);
+    display: block;
     margin-right: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 
@@ -298,6 +296,8 @@ address {
     border: none;
     border-radius: 4px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
     
 /*BUTTON/ACTIVE/INDEX*/
@@ -321,13 +321,14 @@ address {
 */
 .section-hero-servise {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }    
 
 .hero-container {
     display: block;
     text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+
 }
 
 .section-hero-solutions {
@@ -338,7 +339,10 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFF;
-    min-width: 496px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
     
 }
 
@@ -358,7 +362,7 @@ address {
 }
 .section-our-goals-list {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     
 }
 
@@ -456,7 +460,9 @@ address {
     
 }
 
-.ideas-item {}
+.ideas-item {
+    width: calc((100% - 4*24) / 6);
+}
 
 .ideas-img {}
 
@@ -464,13 +470,13 @@ address {
     padding: 32px 16px; 
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+
+.ideas-title-h {
     margin-bottom: 8px;
 }
 
-.ideas-title {
-    margin-top: 33px;
-    margin-bottom: 33px;
-}
+.ideas-title-p {}
 
 .category {
     color: #434455;
@@ -485,17 +491,18 @@ address {
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-top: 120px;
 }
 
-.footer-container {
-    display: inline-block;
-   
-}
+.footer-container {}
 
 .logo-webstudio-text {
     font-weight: 700;
     color: var(--color-web);
+    
+}
+
+.footer-logo {
+    display: inline-block;
     margin-bottom: 16px;
 }
 
@@ -505,4 +512,5 @@ address {
 
 .footer-text {
     color: var(--color-studio-footer);
+    max-width: 264px;
 }
